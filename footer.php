@@ -32,6 +32,7 @@ defined( 'ABSPATH' ) || exit;
 						'theme_location' => 'footer',
 						'container'      => false,
 						'menu_class'     => 'kh-footer-menu',
+						'items_wrap'     => '<ul id="%1$s" class="%2$s" role="list">%3$s</ul>',
 						'depth'          => 1,
 					)
 				);

@@ -19,7 +19,7 @@ get_header();
 		if ( has_post_thumbnail() && ! post_password_required() ) :
 			?>
 			<div class="kh-featured-image"><?php the_post_thumbnail( 'full' ); ?></div><?php endif; ?>
-		<div class="entry-content is-layout-constrained">
+		<div class="entry-content kh-prose is-layout-constrained">
 		<?php
 		the_content();
 		wp_link_pages();

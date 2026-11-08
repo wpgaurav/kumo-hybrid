@@ -1,6 +1,6 @@
 # Validation record
 
-Checked November 8, 2026. This is version 0.1.0, an installable first iteration.
+Checked November 8, 2026. Updated for version 0.2.0 after the design-uish refinement. The 0.1.0 checks were rerun where affected.
 
 ## Environment
 
@@ -36,7 +36,11 @@ Checked November 8, 2026. This is version 0.1.0, an installable first iteration.
 | RTL | Mobile RTL layout spot check has no horizontal overflow |
 | Accessibility automation | axe-core WCAG A/AA checks report zero violations on light and dark demo homepages |
 | Runtime errors | No JavaScript page errors in the core browser flow; no theme errors in the WordPress debug log |
-| Translation | POT generated with WP-CLI; no remotely loaded fonts or image dependencies |
+| Translation and fonts | POT generated with WP-CLI; Inter loads from bundled local WOFF2 files; no remote font or image dependencies |
+
+## Design-uish refinement
+
+Version 0.2.0 adds locally bundled Inter, a clearer primary/secondary action hierarchy, semantic service descriptions, aligned sections, a structured Kumo layer panel, improved prose and table styling, mobile touch targets, and compact pagination. The four revised patterns validate in the actual block editor. Additional browser checks cover local font loading, service-list semantics, the primary action hierarchy, 48px coarse-pointer targets, and mobile pagination. The light and dark homepage axe checks pass with zero violations. See `design-uish-refinement.md` for the design decisions and preservation rules.
 
 ## Visual review and corrections
 

@@ -1,13 +1,13 @@
 # Kumo Hybrid
 
-An independent WordPress theme inspired by Cloudflare's Kumo design system. Version 0.1.0 is an installable first iteration for publishing and business sites.
+An independent WordPress theme inspired by Cloudflare's Kumo design system. Version 0.2.0 refines the publishing and business layouts using design-uish guidance while preserving Kumo's design language.
 
 PHP templates preserve the familiar Customizer, menus, and widgets. `theme.json` v3 supplies the block editor with matching colors, typography, spacing, and layout. The public site uses native HTML, CSS, and two small JavaScript files. It needs no React runtime, npm build, remote font, or required plugin.
 
 ## Install
 
 1. In WordPress, open **Appearance → Themes → Add New → Upload Theme**.
-2. Upload `kumo-hybrid-0.1.0.zip`, install it, and activate Kumo Hybrid.
+2. Upload `kumo-hybrid-0.2.0.zip`, install it, and activate Kumo Hybrid.
 3. Open **Appearance → Customize → Kumo design** to set the site defaults.
 4. Assign menus under **Appearance → Menus**. Optional widget areas are Sidebar and Footer.
 
@@ -18,7 +18,7 @@ Requires WordPress 6.7+ and PHP 8.3+. Tested with WordPress 6.7.4 and 7.1.4 usin
 Create a page, select **Full width (no title)** in the page template control, and insert patterns from the **Kumo Hybrid** category:
 
 - Business introduction with layered panel.
-- Three service panels.
+- Services with a clear hierarchy.
 - Conversation call to action.
 - Frequently asked questions.
 
@@ -34,7 +34,7 @@ The preview uses sample Northstar Studio content. Activation does not create pag
 | Accent color | Shared editor/frontend accent with automatically contrasting button text |
 | Reading width | 560–900px; default 720px |
 | Site width | 960–1600px; default 1200px |
-| Reading font | Local system sans serif or serif; headings and controls stay sans serif |
+| Reading font | Locally bundled Inter, system sans serif, or system serif; headings and controls use Inter |
 | Post collection | Card grid or list |
 | Sidebar | Optional widgets on posts, archives, search, and the blog |
 | Post metadata | Toggle date and author |
@@ -66,10 +66,10 @@ wp theme activate kumo-hybrid
 wp eval-file wp-content/themes/kumo-hybrid/tests/runtime.php
 ```
 
-The runtime script checks Customizer registration and persistence, sanitization, shared settings, and pattern rendering. It restores the theme mods it changes. Browser validation also checked actual core-block serialization, navigation, color modes, and a Customizer save. See `docs/validation.md` for the tested scope and remaining release gates.
+The runtime script checks Customizer registration and persistence, sanitization, shared settings, and pattern rendering. It restores the theme mods it changes. Browser validation also checked actual core-block serialization, navigation, color modes, and a Customizer save. See `docs/validation.md` for the tested scope and remaining release gates, and `docs/design-uish-refinement.md` for the 0.2.0 design decisions.
 
 ## License and provenance
 
-Theme code and original patterns: GPL-2.0-or-later. Kumo-derived token concepts and values: upstream MIT terms retained in `THIRD-PARTY-NOTICES.md`. This theme is independent of Cloudflare and does not include its logo or React components.
+Theme code and original patterns: GPL-2.0-or-later. Bundled Inter variable fonts: SIL Open Font License 1.1, included with the font files. Kumo-derived token concepts and values: upstream MIT terms retained in `THIRD-PARTY-NOTICES.md`. This theme is independent of Cloudflare and does not include its logo or React components.
 
 Design references: [Kumo colors](https://kumo-ui.com/colors/), [Kumo guidance](https://kumo-ui.com/skill/), and [Layer Card](https://kumo-ui.com/components/layer-card/). Architecture: [WordPress theme.json](https://developer.wordpress.org/themes/global-settings-and-styles/introduction-to-theme-json/) and [Customizer API](https://developer.wordpress.org/themes/classic-themes/customize-api/).

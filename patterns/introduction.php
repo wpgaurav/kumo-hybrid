@@ -12,12 +12,12 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <!-- wp:group {"layout":{"type":"default"},"className":"kh-hero","align":"wide"} -->
 <div class="wp-block-group alignwide kh-hero">
-<!-- wp:columns -->
-<div class="wp-block-columns">
+<!-- wp:columns {"className":"kh-split"} -->
+<div class="wp-block-columns kh-split">
 <!-- wp:column -->
 <div class="wp-block-column">
 <!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading"><?php echo esc_html__( 'Good work starts with a clear idea.', 'kumo-hybrid' ); ?></h1>
+<h1 class="wp-block-heading"><?php echo esc_html__( 'Good work starts with a clear idea', 'kumo-hybrid' ); ?></h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"className":"kh-hero-copy"} -->
 <p class="kh-hero-copy"><?php echo esc_html__( 'We help ambitious people turn complicated challenges into useful, considered digital experiences.', 'kumo-hybrid' ); ?></p>
@@ -36,11 +36,17 @@ defined( 'ABSPATH' ) || exit;
 <!-- /wp:column -->
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:group {"layout":{"type":"constrained"},"className":"is-style-layer kh-product-panel"} -->
+<!-- wp:group {"layout":{"type":"default"},"className":"is-style-layer kh-product-panel"} -->
 <div class="wp-block-group is-style-layer kh-product-panel">
-<!-- wp:paragraph {"className":"kh-panel-bar"} -->
-<p class="kh-panel-bar"><?php echo esc_html__( 'From first sketch to launch', 'kumo-hybrid' ); ?></p>
+<!-- wp:group {"layout":{"type":"default"},"className":"kh-panel-bar"} -->
+<div class="wp-block-group kh-panel-bar">
+<!-- wp:paragraph -->
+<p><?php echo esc_html__( 'From first sketch to launch', 'kumo-hybrid' ); ?></p>
 <!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"layout":{"type":"default"},"className":"kh-panel-content"} -->
+<div class="wp-block-group kh-panel-content">
 <!-- wp:heading -->
 <h2 class="wp-block-heading"><?php echo esc_html__( 'A clear path forward', 'kumo-hybrid' ); ?></h2>
 <!-- /wp:heading -->
@@ -60,10 +66,12 @@ defined( 'ABSPATH' ) || exit;
 <!-- /wp:list-item -->
 </ul>
 <!-- /wp:list -->
-<!-- wp:group {"layout":{"type":"constrained"},"className":"is-style-recessed"} -->
-<div class="wp-block-group is-style-recessed">
-<!-- wp:paragraph {"className":"kh-small"} -->
-<p class="kh-small"><?php echo esc_html__( 'Thoughtful by design', 'kumo-hybrid' ); ?></p>
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"layout":{"type":"default"},"className":"kh-panel-footer"} -->
+<div class="wp-block-group kh-panel-footer">
+<!-- wp:paragraph -->
+<p><?php echo esc_html__( 'A focused plan. A thoughtful result.', 'kumo-hybrid' ); ?></p>
 <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->

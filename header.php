@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) || exit;
 				?>
 				<p class="kh-tagline"><?php bloginfo( 'description' ); ?></p><?php endif; ?>
 		</div>
-		<button class="kh-menu-toggle kh-control" aria-controls="site-navigation" aria-expanded="false" hidden><?php echo kumo_hybrid_icon( 'menu' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><span><?php esc_html_e( 'Menu', 'kumo-hybrid' ); ?></span></button>
+		<button type="button" class="kh-menu-toggle kh-control" aria-controls="site-navigation" aria-expanded="false" hidden><?php echo kumo_hybrid_icon( 'menu' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><span><?php esc_html_e( 'Menu', 'kumo-hybrid' ); ?></span></button>
 		<nav id="site-navigation" class="kh-navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'kumo-hybrid' ); ?>">
 			<?php
 			wp_nav_menu(
@@ -38,6 +38,7 @@ defined( 'ABSPATH' ) || exit;
 					'theme_location' => 'primary',
 					'container'      => false,
 					'menu_class'     => 'kh-menu',
+					'items_wrap'     => '<ul id="%1$s" class="%2$s" role="list">%3$s</ul>',
 					'fallback_cb'    => 'kumo_hybrid_menu_fallback',
 					'depth'          => 3,
 				)
@@ -48,11 +49,11 @@ defined( 'ABSPATH' ) || exit;
 			<?php
 			if ( kumo_hybrid_option( 'header_action_label' ) && kumo_hybrid_option( 'header_action_url' ) ) :
 				?>
-				<a class="kh-button kh-header-action" href="<?php echo esc_url( kumo_hybrid_option( 'header_action_url' ) ); ?>"><?php echo esc_html( kumo_hybrid_option( 'header_action_label' ) ); ?></a><?php endif; ?>
+				<a class="kh-control kh-header-action" href="<?php echo esc_url( kumo_hybrid_option( 'header_action_url' ) ); ?>"><?php echo esc_html( kumo_hybrid_option( 'header_action_label' ) ); ?></a><?php endif; ?>
 			<?php
 			if ( kumo_hybrid_option( 'show_mode_toggle' ) ) :
 				?>
-				<button class="kh-mode-toggle kh-control" aria-label="<?php esc_attr_e( 'Dark mode', 'kumo-hybrid' ); ?>" aria-pressed="false" hidden><?php echo kumo_hybrid_icon( 'mode' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></button><?php endif; ?>
+				<button type="button" class="kh-mode-toggle kh-control" aria-label="<?php esc_attr_e( 'Dark mode', 'kumo-hybrid' ); ?>" aria-pressed="false" hidden><?php echo kumo_hybrid_icon( 'mode' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></button><?php endif; ?>
 		</div>
 	</div>
 </header>

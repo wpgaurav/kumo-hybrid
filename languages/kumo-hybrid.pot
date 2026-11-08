@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Kumo Hybrid 0.1.0\n"
+"Project-Id-Version: Kumo Hybrid 0.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/kumo-hybrid\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-08T03:28:15+00:00\n"
+"POT-Creation-Date: 2026-11-08T03:47:40+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: kumo-hybrid\n"
@@ -108,7 +108,7 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: header.php:55
+#: header.php:56
 msgid "Dark mode"
 msgstr ""
 
@@ -145,82 +145,86 @@ msgid "Reading font"
 msgstr ""
 
 #: inc/settings.php:51
-msgid "System sans serif"
+msgid "Inter (local)"
 msgstr ""
 
 #: inc/settings.php:52
+msgid "System sans serif"
+msgstr ""
+
+#: inc/settings.php:53
 msgid "System serif"
 msgstr ""
 
-#: inc/settings.php:57
+#: inc/settings.php:58
 msgid "Post collection layout"
 msgstr ""
 
-#: inc/settings.php:60
+#: inc/settings.php:61
 msgid "Cards"
 msgstr ""
 
-#: inc/settings.php:61
+#: inc/settings.php:62
 msgid "List"
 msgstr ""
 
-#: inc/settings.php:66
+#: inc/settings.php:67
 msgid "Show sidebar on posts and archives"
 msgstr ""
 
-#: inc/settings.php:71
+#: inc/settings.php:72
 msgid "Show post date and author"
 msgstr ""
 
-#: inc/settings.php:76
+#: inc/settings.php:77
 msgid "Show visitor color mode switch"
 msgstr ""
 
-#: inc/settings.php:81
+#: inc/settings.php:82
 msgid "Header button label"
 msgstr ""
 
-#: inc/settings.php:86
+#: inc/settings.php:87
 msgid "Header button URL"
 msgstr ""
 
-#: inc/settings.php:91
+#: inc/settings.php:92
 msgid "Footer text"
 msgstr ""
 
-#: inc/settings.php:150
+#: inc/settings.php:151
 msgid "Kumo design"
 msgstr ""
 
-#: inc/settings.php:152
+#: inc/settings.php:153
 msgid "Site defaults also apply to the block editor. Individual blocks can use their own styles. Visitor color choices override the default mode."
 msgstr ""
 
-#: inc/settings.php:236
+#: inc/settings.php:241
 msgid "Canvas"
 msgstr ""
 
-#: inc/settings.php:241
+#: inc/settings.php:246
 msgid "Surface"
 msgstr ""
 
-#: inc/settings.php:246
+#: inc/settings.php:251
 msgid "Recessed"
 msgstr ""
 
-#: inc/settings.php:251
+#: inc/settings.php:256
 msgid "Text"
 msgstr ""
 
-#: inc/settings.php:256
+#: inc/settings.php:261
 msgid "Secondary text"
 msgstr ""
 
-#: inc/settings.php:261
+#: inc/settings.php:266
 msgid "Accent"
 msgstr ""
 
-#: inc/settings.php:266
+#: inc/settings.php:271
 msgid "Text on accent"
 msgstr ""
 
@@ -229,11 +233,7 @@ msgid "Home"
 msgstr ""
 
 #: index.php:12
-msgid "The journal"
-msgstr ""
-
-#: index.php:12
-msgid "Ideas worth sharing."
+msgid "Latest stories"
 msgstr ""
 
 #. Template Name of the theme
@@ -255,64 +255,56 @@ msgid "Conversation call to action built with native WordPress blocks."
 msgstr ""
 
 #: patterns/call-to-action.php:20
-msgid "A good partnership starts with listening."
+msgid "Start with a conversation"
 msgstr ""
 
 #: patterns/call-to-action.php:23
-msgid "Tell us what you are working toward. We will help you find the next useful step."
+msgid "Tell us what you're building, who it's for, and what needs to work better."
 msgstr ""
 
 #: patterns/call-to-action.php:32
-msgid "Make space for the work"
-msgstr ""
-
-#: patterns/call-to-action.php:35
-msgid "A focused conversation, an honest scope, and a plan you can act on."
-msgstr ""
-
-#: patterns/call-to-action.php:40
 msgid "Get in touch"
 msgstr ""
 
 #: patterns/features.php
 msgctxt "Pattern title"
-msgid "Three service panels"
+msgid "Services with a clear hierarchy"
 msgstr ""
 
 #: patterns/features.php
 msgctxt "Pattern description"
-msgid "Three service panels built with native WordPress blocks."
+msgid "Services with a clear hierarchy built with native WordPress blocks."
 msgstr ""
 
-#: patterns/features.php:16
-msgid "Less noise. More purpose."
+#: patterns/features.php:18
+msgid "A clear direction at every step"
 msgstr ""
 
-#: patterns/features.php:19
+#: patterns/features.php:21
 msgid "Bring the right thinking to every part of your next project."
 msgstr ""
 
-#: patterns/features.php:28
+#: patterns/features.php:34
 msgid "Find your direction"
 msgstr ""
 
-#: patterns/features.php:31
+#: patterns/features.php:41
 msgid "Turn a long list of possibilities into a focused plan. We start with the questions that matter."
 msgstr ""
 
-#: patterns/features.php:42
+#: patterns/features.php:52
 msgid "Make it feel right"
 msgstr ""
 
-#: patterns/features.php:45
+#: patterns/features.php:59
 msgid "Clear interfaces, considered details, and a visual language that belongs to your business."
 msgstr ""
 
-#: patterns/features.php:56
+#: patterns/features.php:70
 msgid "Build for the long run"
 msgstr ""
 
-#: patterns/features.php:59
+#: patterns/features.php:77
 msgid "A reliable foundation that stays easy to manage as your work grows and changes."
 msgstr ""
 
@@ -327,7 +319,7 @@ msgid "Business introduction with layered panel built with native WordPress bloc
 msgstr ""
 
 #: patterns/introduction.php:20
-msgid "Good work starts with a clear idea."
+msgid "Good work starts with a clear idea"
 msgstr ""
 
 #: patterns/introduction.php:23
@@ -342,32 +334,32 @@ msgstr ""
 msgid "What we do"
 msgstr ""
 
-#: patterns/introduction.php:42
+#: patterns/introduction.php:44
 msgid "From first sketch to launch"
 msgstr ""
 
-#: patterns/introduction.php:45
+#: patterns/introduction.php:51
 msgid "A clear path forward"
 msgstr ""
 
-#: patterns/introduction.php:48
+#: patterns/introduction.php:54
 msgid "One focused process. Room for the details."
 msgstr ""
 
-#: patterns/introduction.php:53
+#: patterns/introduction.php:59
 msgid "Find the right direction"
 msgstr ""
 
-#: patterns/introduction.php:56
+#: patterns/introduction.php:62
 msgid "Design around real people"
 msgstr ""
 
-#: patterns/introduction.php:59
+#: patterns/introduction.php:65
 msgid "Build something that lasts"
 msgstr ""
 
-#: patterns/introduction.php:66
-msgid "Thoughtful by design"
+#: patterns/introduction.php:74
+msgid "A focused plan. A thoughtful result."
 msgstr ""
 
 #: patterns/questions.php
@@ -380,32 +372,36 @@ msgctxt "Pattern description"
 msgid "Frequently asked questions built with native WordPress blocks."
 msgstr ""
 
-#: patterns/questions.php:16
-msgid "A few things you might be wondering."
-msgstr ""
-
-#: patterns/questions.php:19
-msgid "Where does a project start?"
-msgstr ""
-
-#: patterns/questions.php:20
-msgid "With a conversation about your goals, the people you serve, and what is getting in the way."
+#: patterns/questions.php:22
+msgid "A few useful answers"
 msgstr ""
 
 #: patterns/questions.php:25
+msgid "What to expect when we work together."
+msgstr ""
+
+#: patterns/questions.php:36
+msgid "Where does a project start?"
+msgstr ""
+
+#: patterns/questions.php:37
+msgid "With a conversation about your goals, the people you serve, and what is getting in the way."
+msgstr ""
+
+#: patterns/questions.php:42
 msgid "Can we start with something small?"
 msgstr ""
 
-#: patterns/questions.php:26
+#: patterns/questions.php:43
 msgid "Yes. A focused first step is often the best way to learn what the larger project needs."
 msgstr ""
 
-#: patterns/questions.php:31
+#: patterns/questions.php:48
 msgid "What happens after launch?"
 msgstr ""
 
-#: patterns/questions.php:32
-msgid "We will agree on handover and support before the project begins, so you know what comes next."
+#: patterns/questions.php:49
+msgid "We'll agree on handover and support before the project begins, so you know what comes next."
 msgstr ""
 
 #. translators: %s: search query.
@@ -487,6 +483,11 @@ msgstr ""
 #: theme.json
 msgctxt "Color name"
 msgid "Text on accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Inter"
 msgstr ""
 
 #: theme.json

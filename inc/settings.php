@@ -44,10 +44,11 @@ function kumo_hybrid_settings() {
 			'max'     => 1600,
 		),
 		'font'                => array(
-			'default' => 'sans',
+			'default' => 'inter',
 			'label'   => __( 'Reading font', 'kumo-hybrid' ),
 			'type'    => 'select',
 			'choices' => array(
+				'inter' => __( 'Inter (local)', 'kumo-hybrid' ),
 				'sans'  => __( 'System sans serif', 'kumo-hybrid' ),
 				'serif' => __( 'System serif', 'kumo-hybrid' ),
 			),
@@ -220,7 +221,11 @@ function kumo_hybrid_accent_ink( $hex ) {
  */
 function kumo_hybrid_theme_json( $data ) {
 	$accent = kumo_hybrid_option( 'accent' );
-	$font   = 'serif' === kumo_hybrid_option( 'font' ) ? 'Georgia, Cambria, "Times New Roman", serif' : '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+	$font   = array(
+		'inter' => '"InterVariable", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+		'sans'  => '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+		'serif' => 'Georgia, Cambria, "Times New Roman", serif',
+	)[ kumo_hybrid_option( 'font' ) ];
 	$data->update_with(
 		array(
 			'version'  => 3,

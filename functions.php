@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'KUMO_HYBRID_VERSION', '0.1.0' );
+define( 'KUMO_HYBRID_VERSION', '0.2.0' );
 
 require_once get_theme_file_path( '/inc/settings.php' );
 require_once get_theme_file_path( '/inc/template-tags.php' );
