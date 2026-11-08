@@ -1,0 +1,560 @@
+# Copyright (C) 2026 Gaurav Tiwari
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Kumo Hybrid 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/kumo-hybrid\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-08T03:28:15+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: kumo-hybrid\n"
+
+#. Theme Name of the theme
+#: style.css
+#: functions.php:95
+msgid "Kumo Hybrid"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "An independent Kumo-inspired hybrid theme with native blocks, accessible navigation, light and dark modes, and the WordPress Customizer."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Gaurav Tiwari"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://gauravtiwari.org/"
+msgstr ""
+
+#: 404.php:11
+msgid "This page took a different path."
+msgstr ""
+
+#: 404.php:11
+msgid "The address may have changed. Search the site or start again from the homepage."
+msgstr ""
+
+#: 404.php:11
+#: template-parts/none.php:10
+msgid "Go to the homepage"
+msgstr ""
+
+#. translators: %s: comment count.
+#: comments.php:14
+#, php-format
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:31
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:28
+#: functions.php:37
+msgid "Footer menu"
+msgstr ""
+
+#: functions.php:36
+#: header.php:34
+msgid "Primary menu"
+msgstr ""
+
+#: functions.php:74
+#: sidebar.php:12
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:75
+msgid "Footer"
+msgstr ""
+
+#: functions.php:98
+msgid "Layered panel"
+msgstr ""
+
+#: functions.php:99
+msgid "Recessed panel"
+msgstr ""
+
+#: functions.php:101
+msgid "Quiet"
+msgstr ""
+
+#: functions.php:102
+msgid "Disclosure panel"
+msgstr ""
+
+#: functions.php:103
+msgid "Checklist"
+msgstr ""
+
+#: header.php:18
+#: page-templates/canvas.php:10
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:33
+msgid "Menu"
+msgstr ""
+
+#: header.php:55
+msgid "Dark mode"
+msgstr ""
+
+#: inc/settings.php:19
+msgid "Default color mode"
+msgstr ""
+
+#: inc/settings.php:22
+msgid "Light"
+msgstr ""
+
+#: inc/settings.php:23
+msgid "Dark"
+msgstr ""
+
+#: inc/settings.php:24
+msgid "Follow device"
+msgstr ""
+
+#: inc/settings.php:29
+msgid "Accent color"
+msgstr ""
+
+#: inc/settings.php:34
+msgid "Reading width (px)"
+msgstr ""
+
+#: inc/settings.php:41
+msgid "Site width (px)"
+msgstr ""
+
+#: inc/settings.php:48
+msgid "Reading font"
+msgstr ""
+
+#: inc/settings.php:51
+msgid "System sans serif"
+msgstr ""
+
+#: inc/settings.php:52
+msgid "System serif"
+msgstr ""
+
+#: inc/settings.php:57
+msgid "Post collection layout"
+msgstr ""
+
+#: inc/settings.php:60
+msgid "Cards"
+msgstr ""
+
+#: inc/settings.php:61
+msgid "List"
+msgstr ""
+
+#: inc/settings.php:66
+msgid "Show sidebar on posts and archives"
+msgstr ""
+
+#: inc/settings.php:71
+msgid "Show post date and author"
+msgstr ""
+
+#: inc/settings.php:76
+msgid "Show visitor color mode switch"
+msgstr ""
+
+#: inc/settings.php:81
+msgid "Header button label"
+msgstr ""
+
+#: inc/settings.php:86
+msgid "Header button URL"
+msgstr ""
+
+#: inc/settings.php:91
+msgid "Footer text"
+msgstr ""
+
+#: inc/settings.php:150
+msgid "Kumo design"
+msgstr ""
+
+#: inc/settings.php:152
+msgid "Site defaults also apply to the block editor. Individual blocks can use their own styles. Visitor color choices override the default mode."
+msgstr ""
+
+#: inc/settings.php:236
+msgid "Canvas"
+msgstr ""
+
+#: inc/settings.php:241
+msgid "Surface"
+msgstr ""
+
+#: inc/settings.php:246
+msgid "Recessed"
+msgstr ""
+
+#: inc/settings.php:251
+msgid "Text"
+msgstr ""
+
+#: inc/settings.php:256
+msgid "Secondary text"
+msgstr ""
+
+#: inc/settings.php:261
+msgid "Accent"
+msgstr ""
+
+#: inc/settings.php:266
+msgid "Text on accent"
+msgstr ""
+
+#: inc/template-tags.php:53
+msgid "Home"
+msgstr ""
+
+#: index.php:12
+msgid "The journal"
+msgstr ""
+
+#: index.php:12
+msgid "Ideas worth sharing."
+msgstr ""
+
+#. Template Name of the theme
+msgid "Canvas (content only)"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Full width (no title)"
+msgstr ""
+
+#: patterns/call-to-action.php
+msgctxt "Pattern title"
+msgid "Conversation call to action"
+msgstr ""
+
+#: patterns/call-to-action.php
+msgctxt "Pattern description"
+msgid "Conversation call to action built with native WordPress blocks."
+msgstr ""
+
+#: patterns/call-to-action.php:20
+msgid "A good partnership starts with listening."
+msgstr ""
+
+#: patterns/call-to-action.php:23
+msgid "Tell us what you are working toward. We will help you find the next useful step."
+msgstr ""
+
+#: patterns/call-to-action.php:32
+msgid "Make space for the work"
+msgstr ""
+
+#: patterns/call-to-action.php:35
+msgid "A focused conversation, an honest scope, and a plan you can act on."
+msgstr ""
+
+#: patterns/call-to-action.php:40
+msgid "Get in touch"
+msgstr ""
+
+#: patterns/features.php
+msgctxt "Pattern title"
+msgid "Three service panels"
+msgstr ""
+
+#: patterns/features.php
+msgctxt "Pattern description"
+msgid "Three service panels built with native WordPress blocks."
+msgstr ""
+
+#: patterns/features.php:16
+msgid "Less noise. More purpose."
+msgstr ""
+
+#: patterns/features.php:19
+msgid "Bring the right thinking to every part of your next project."
+msgstr ""
+
+#: patterns/features.php:28
+msgid "Find your direction"
+msgstr ""
+
+#: patterns/features.php:31
+msgid "Turn a long list of possibilities into a focused plan. We start with the questions that matter."
+msgstr ""
+
+#: patterns/features.php:42
+msgid "Make it feel right"
+msgstr ""
+
+#: patterns/features.php:45
+msgid "Clear interfaces, considered details, and a visual language that belongs to your business."
+msgstr ""
+
+#: patterns/features.php:56
+msgid "Build for the long run"
+msgstr ""
+
+#: patterns/features.php:59
+msgid "A reliable foundation that stays easy to manage as your work grows and changes."
+msgstr ""
+
+#: patterns/introduction.php
+msgctxt "Pattern title"
+msgid "Business introduction with layered panel"
+msgstr ""
+
+#: patterns/introduction.php
+msgctxt "Pattern description"
+msgid "Business introduction with layered panel built with native WordPress blocks."
+msgstr ""
+
+#: patterns/introduction.php:20
+msgid "Good work starts with a clear idea."
+msgstr ""
+
+#: patterns/introduction.php:23
+msgid "We help ambitious people turn complicated challenges into useful, considered digital experiences."
+msgstr ""
+
+#: patterns/introduction.php:28
+msgid "Explore our approach"
+msgstr ""
+
+#: patterns/introduction.php:31
+msgid "What we do"
+msgstr ""
+
+#: patterns/introduction.php:42
+msgid "From first sketch to launch"
+msgstr ""
+
+#: patterns/introduction.php:45
+msgid "A clear path forward"
+msgstr ""
+
+#: patterns/introduction.php:48
+msgid "One focused process. Room for the details."
+msgstr ""
+
+#: patterns/introduction.php:53
+msgid "Find the right direction"
+msgstr ""
+
+#: patterns/introduction.php:56
+msgid "Design around real people"
+msgstr ""
+
+#: patterns/introduction.php:59
+msgid "Build something that lasts"
+msgstr ""
+
+#: patterns/introduction.php:66
+msgid "Thoughtful by design"
+msgstr ""
+
+#: patterns/questions.php
+msgctxt "Pattern title"
+msgid "Frequently asked questions"
+msgstr ""
+
+#: patterns/questions.php
+msgctxt "Pattern description"
+msgid "Frequently asked questions built with native WordPress blocks."
+msgstr ""
+
+#: patterns/questions.php:16
+msgid "A few things you might be wondering."
+msgstr ""
+
+#: patterns/questions.php:19
+msgid "Where does a project start?"
+msgstr ""
+
+#: patterns/questions.php:20
+msgid "With a conversation about your goals, the people you serve, and what is getting in the way."
+msgstr ""
+
+#: patterns/questions.php:25
+msgid "Can we start with something small?"
+msgstr ""
+
+#: patterns/questions.php:26
+msgid "Yes. A focused first step is often the best way to learn what the larger project needs."
+msgstr ""
+
+#: patterns/questions.php:31
+msgid "What happens after launch?"
+msgstr ""
+
+#: patterns/questions.php:32
+msgid "We will agree on handover and support before the project begins, so you know what comes next."
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:12
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#: searchform.php:12
+msgid "Search this site"
+msgstr ""
+
+#: searchform.php:13
+msgid "Search articles…"
+msgstr ""
+
+#: searchform.php:14
+msgid "Search"
+msgstr ""
+
+#: single.php:42
+msgid "Previous article"
+msgstr ""
+
+#: single.php:43
+msgid "Next article"
+msgstr ""
+
+#: template-parts/card.php:30
+msgid "Untitled"
+msgstr ""
+
+#: template-parts/collection.php:24
+msgid "Previous"
+msgstr ""
+
+#: template-parts/collection.php:25
+msgid "Next"
+msgstr ""
+
+#: template-parts/none.php:10
+msgid "Nothing here yet"
+msgstr ""
+
+#: template-parts/none.php:10
+msgid "Try a different search or return to the homepage."
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Canvas"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Surface"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Recessed"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary text"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text on accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "System sans serif"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "System serif"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Display"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "20"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "30"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "40"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "50"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "60"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "70"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Panel"
+msgstr ""

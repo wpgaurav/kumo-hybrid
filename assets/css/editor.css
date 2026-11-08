@@ -1,0 +1,7 @@
+.editor-styles-wrapper { background: var(--kh-canvas); color: var(--kh-text); padding-inline: 1.25rem; }
+.editor-styles-wrapper .editor-post-title { font-family: var(--kh-sans); font-weight: 600; }
+.editor-styles-wrapper :where(a) { color: var(--kh-link); }
+.editor-styles-wrapper :where(a,button,summary):focus-visible { outline: 2px solid var(--kh-text); outline-offset: 4px; }
+.editor-styles-wrapper .is-root-container > .wp-block { max-width: var(--kh-content); margin-inline: auto; }
+.editor-styles-wrapper .is-root-container > .wp-block.alignwide { max-width: var(--kh-wide); }
+.editor-styles-wrapper .is-root-container > .wp-block.alignfull { max-width: none; }

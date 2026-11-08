@@ -1,0 +1,189 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": false,
+    "layout": {
+      "contentSize": "720px",
+      "wideSize": "1200px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "custom": true,
+      "palette": [
+        {
+          "slug": "canvas",
+          "name": "Canvas",
+          "color": "var(--kh-canvas)"
+        },
+        {
+          "slug": "base",
+          "name": "Surface",
+          "color": "var(--kh-base)"
+        },
+        {
+          "slug": "recessed",
+          "name": "Recessed",
+          "color": "var(--kh-recessed)"
+        },
+        {
+          "slug": "text",
+          "name": "Text",
+          "color": "var(--kh-text)"
+        },
+        {
+          "slug": "subtle",
+          "name": "Secondary text",
+          "color": "var(--kh-subtle)"
+        },
+        {
+          "slug": "brand",
+          "name": "Accent",
+          "color": "#2563eb"
+        },
+        {
+          "slug": "brand-ink",
+          "name": "Text on accent",
+          "color": "#ffffff"
+        }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "dropCap": false,
+      "fontFamilies": [
+        {
+          "slug": "system-sans",
+          "name": "System sans serif",
+          "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+        },
+        {
+          "slug": "system-serif",
+          "name": "System serif",
+          "fontFamily": "Georgia, Cambria, \"Times New Roman\", serif"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "small",
+          "name": "Small",
+          "size": "0.875rem"
+        },
+        {
+          "slug": "medium",
+          "name": "Medium",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "x-large",
+          "name": "Extra large",
+          "size": "2.25rem"
+        },
+        {
+          "slug": "xx-large",
+          "name": "Display",
+          "size": "3.5rem"
+        }
+      ]
+    },
+    "spacing": {
+      "units": [
+        "px",
+        "rem",
+        "em",
+        "%",
+        "vw"
+      ],
+      "spacingSizes": [
+        {
+          "slug": "20",
+          "name": "20",
+          "size": "0.5rem"
+        },
+        {
+          "slug": "30",
+          "name": "30",
+          "size": "1rem"
+        },
+        {
+          "slug": "40",
+          "name": "40",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "50",
+          "name": "50",
+          "size": "2rem"
+        },
+        {
+          "slug": "60",
+          "name": "60",
+          "size": "3rem"
+        },
+        {
+          "slug": "70",
+          "name": "70",
+          "size": "4rem"
+        }
+      ]
+    },
+    "shadow": {
+      "defaultPresets": false,
+      "presets": [
+        {
+          "slug": "panel",
+          "name": "Panel",
+          "shadow": "0 1px 2px #0000000d, 0 0 0 1px var(--kh-hairline)"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--canvas)",
+      "text": "var(--wp--preset--color--text)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--system-sans)",
+      "fontSize": "var(--wp--preset--font-size--medium)",
+      "lineHeight": "1.7"
+    },
+    "spacing": {
+      "blockGap": "1.5rem"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--kh-link)"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--system-sans)",
+          "fontWeight": "600",
+          "lineHeight": "1.2"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var(--wp--preset--color--brand)",
+          "text": "var(--wp--preset--color--brand-ink)"
+        },
+        "border": {
+          "radius": "7px"
+        },
+        "typography": {
+          "fontSize": "0.875rem",
+          "fontWeight": "500"
+        }
+      }
+    }
+  }
+}
