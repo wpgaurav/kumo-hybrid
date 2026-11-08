@@ -10,7 +10,7 @@
     "license": "free lifetime, unlimited site activations",
     "template": "pbb-template.php",
     "pbb_sections": 7,
-    "content_sha256": "d5e42f4b866f6f07963f270ea2385ee34825cb4f9ca53f363c4665df7f54f5f1"
+    "content_sha256": "9d83e671c4e0489be8a29f8057d518631c32398f15120c7df9beda056eb5e7fe"
   },
   "demo": {
     "url": "https://demo.gatilab.com/kumo-hybrid/",
