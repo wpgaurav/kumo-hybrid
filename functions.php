@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'KUMO_HYBRID_VERSION', '0.2.0' );
+define( 'KUMO_HYBRID_VERSION', '0.3.0' );
 
 require_once get_theme_file_path( '/inc/settings.php' );
 require_once get_theme_file_path( '/inc/template-tags.php' );
@@ -17,9 +17,14 @@ require_once get_theme_file_path( '/inc/template-tags.php' );
  */
 function kumo_hybrid_setup() {
 	load_theme_textdomain( 'kumo-hybrid', get_template_directory() . '/languages' );
-	foreach ( array( 'title-tag', 'post-thumbnails', 'responsive-embeds', 'wp-block-styles', 'align-wide', 'editor-styles', 'automatic-feed-links', 'customize-selective-refresh-widgets' ) as $feature ) {
-		add_theme_support( $feature );
-	}
+	add_theme_support( 'title-tag' );
+	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'responsive-embeds' );
+	add_theme_support( 'wp-block-styles' );
+	add_theme_support( 'align-wide' );
+	add_theme_support( 'editor-styles' );
+	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'customize-selective-refresh-widgets' );
 	add_theme_support(
 		'custom-logo',
 		array(

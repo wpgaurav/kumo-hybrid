@@ -1,17 +1,20 @@
 # Kumo Hybrid
 
-An independent WordPress theme inspired by Cloudflare's Kumo design system. Version 0.2.0 refines the publishing and business layouts using design-uish guidance while preserving Kumo's design language.
+An independent WordPress theme inspired by Cloudflare's Kumo design system. Version 0.3.0 adds free lifetime update keys through FluentCart to the refined publishing and business theme.
 
 PHP templates preserve the familiar Customizer, menus, and widgets. `theme.json` v3 supplies the block editor with matching colors, typography, spacing, and layout. The public site uses native HTML, CSS, and two small JavaScript files. It needs no React runtime, npm build, remote font, or required plugin.
 
 ## Install
 
 1. In WordPress, open **Appearance → Themes → Add New → Upload Theme**.
-2. Upload `kumo-hybrid-0.2.0.zip`, install it, and activate Kumo Hybrid.
+2. Upload the direct-download ZIP from your account, install it, and activate Kumo Hybrid.
 3. Open **Appearance → Customize → Kumo design** to set the site defaults.
-4. Assign menus under **Appearance → Menus**. Optional widget areas are Sidebar and Footer.
+4. For updates, open **Appearance → Kumo Hybrid License** and activate the free key issued at checkout. All theme features work without a key.
+5. Assign menus under **Appearance → Menus**. Optional widget areas are Sidebar and Footer.
 
 Requires WordPress 6.7+ and PHP 8.3+. Tested with WordPress 6.7.4 and 7.1.4 using PHP 8.3. Modern browsers must support CSS `light-dark()` and `color-mix()`.
+
+Get the theme and a free key at [the product page](https://gauravtiwari.org/product/kumo-hybrid/). Try the [live demo](https://demo.gatilab.com/kumo-hybrid/). The source and clean build remain available on [GitHub](https://github.com/wpgaurav/kumo-hybrid). The direct build includes a lifetime update key for unlimited websites; see `distribution/README.md` for packaging and privacy details.
 
 ## Build a homepage
 
@@ -66,7 +69,7 @@ wp theme activate kumo-hybrid
 wp eval-file wp-content/themes/kumo-hybrid/tests/runtime.php
 ```
 
-The runtime script checks Customizer registration and persistence, sanitization, shared settings, and pattern rendering. It restores the theme mods it changes. Browser validation also checked actual core-block serialization, navigation, color modes, and a Customizer save. See `docs/validation.md` for the tested scope and remaining release gates, and `docs/design-uish-refinement.md` for the 0.2.0 design decisions.
+The runtime script checks Customizer registration and persistence, sanitization, shared settings, and pattern rendering. It restores the theme mods it changes. Browser validation also checked actual core-block serialization, navigation, color modes, and a Customizer save. See `docs/validation.md` for the tested scope and remaining release gates, and `docs/design-uish-refinement.md` for the 0.3.0 design decisions.
 
 ## License and provenance
 

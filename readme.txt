@@ -3,7 +3,7 @@ Contributors: gauravtiwari
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 0.2.0
+Stable tag: 0.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,9 @@ Inter variable fonts, Copyright the Inter Project Authors. SIL Open Font License
 See THIRD-PARTY-NOTICES.md. No affiliation with or endorsement by Cloudflare.
 
 == Changelog ==
+= 0.3.0 =
+First FluentCart release. The direct-download package includes free lifetime update-key support, with unlimited activations.
+
 = 0.2.0 =
 Refined hierarchy, locally bundled Inter, quieter service sections, shared pattern spacing, readable prose, and larger touch targets.
 

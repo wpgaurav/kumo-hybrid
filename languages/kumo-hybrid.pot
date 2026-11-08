@@ -2,22 +2,27 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Kumo Hybrid 0.2.0\n"
+"Project-Id-Version: Kumo Hybrid 0.3.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/kumo-hybrid\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-08T03:47:40+00:00\n"
+"POT-Creation-Date: 2026-11-08T10:01:55+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: kumo-hybrid\n"
 
 #. Theme Name of the theme
 #: style.css
-#: functions.php:95
+#: functions.php:100
 msgid "Kumo Hybrid"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://gauravtiwari.org/product/kumo-hybrid/"
 msgstr ""
 
 #. Description of the theme
@@ -60,42 +65,176 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
+#: distribution/class-kumo-hybrid-license.php:104
+msgid "Unsupported license request."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:124
+msgid "Could not reach the license server. Your saved license has been kept."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:130
+msgid "This license key was not found. Copy it again from your GauravTiwari.org account."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:131
+msgid "This key belongs to another product. Enter your Kumo Hybrid license key."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:132
+msgid "This license is inactive. Contact support from your GauravTiwari.org account."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:133
+msgid "This license has expired. Get a new free key from the Kumo Hybrid page."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:135
+msgid "This key could not be verified for the Kumo Hybrid."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:138
+msgid "The license server could not verify this request. Please try again."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:166
+msgid "Enter a valid license key."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:169
+msgid "Deactivate the saved license before activating a different key."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:176
+msgid "This key could not be activated for the Kumo Hybrid."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:199
+#: distribution/class-kumo-hybrid-license.php:224
+msgid "No license key is saved."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:213
+msgid "The saved license is not currently valid. The theme keeps working; updates are paused."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:237
+msgid "The server could not deactivate this website. Your saved key has been kept so you can retry."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:306
+#: distribution/class-kumo-hybrid-license.php:376
+msgid "Kumo Hybrid License"
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:322
+msgid "Activate your free Kumo Hybrid license key to receive theme updates."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:324
+msgid "Add License Key"
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:333
+msgid "You cannot manage this theme license."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:344
+msgid "Choose a license action."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:347
+msgid "License activated. Theme updates are on."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:348
+msgid "License deactivated on this website."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:349
+msgid "License verified."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:380
+msgid "Your free license key turns on theme updates. It is lifetime and works on any number of websites. The theme works fully without it."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:382
+msgid "Status"
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:383
+msgid "Installed version"
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:384
+msgid "Website"
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:390
+msgid "License key"
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:393
+msgid "Find your key under Licenses in your GauravTiwari.org account. It is sent securely to GauravTiwari.org to verify this website."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:394
+msgid "Open my licenses"
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:396
+msgid "Activate License"
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:398
+msgid "A license key is saved. It is hidden for security."
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:400
+msgid "Check License"
+msgstr ""
+
+#: distribution/class-kumo-hybrid-license.php:401
+msgid "Deactivate License"
+msgstr ""
+
 #: footer.php:28
-#: functions.php:37
+#: functions.php:42
 msgid "Footer menu"
 msgstr ""
 
-#: functions.php:36
+#: functions.php:41
 #: header.php:34
 msgid "Primary menu"
 msgstr ""
 
-#: functions.php:74
+#: functions.php:79
 #: sidebar.php:12
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:75
+#: functions.php:80
 msgid "Footer"
 msgstr ""
 
-#: functions.php:98
+#: functions.php:103
 msgid "Layered panel"
 msgstr ""
 
-#: functions.php:99
+#: functions.php:104
 msgid "Recessed panel"
 msgstr ""
 
-#: functions.php:101
+#: functions.php:106
 msgid "Quiet"
 msgstr ""
 
-#: functions.php:102
+#: functions.php:107
 msgid "Disclosure panel"
 msgstr ""
 
-#: functions.php:103
+#: functions.php:108
 msgid "Checklist"
 msgstr ""
 

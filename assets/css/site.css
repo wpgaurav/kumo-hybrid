@@ -161,3 +161,5 @@ input::placeholder, textarea::placeholder { color: var(--kh-subtle); opacity: 1;
   .kh-mode-toggle, .kh-submenu-toggle { min-width: 48px; }
   .kh-footer-menu a { display: inline-flex; align-items: center; min-height: 48px; }
 }
+
+.aligncenter { display: block; margin-inline: auto; }
