@@ -1,0 +1,77 @@
+{
+  "version": "0.3.0",
+  "date": "2026-11-08",
+  "product": {
+    "id": 1189259,
+    "variation_id": 165,
+    "url": "https://gauravtiwari.org/product/kumo-hybrid/",
+    "status": "publish",
+    "price": 0,
+    "license": "free lifetime, unlimited site activations",
+    "template": "pbb-template.php",
+    "pbb_sections": 7,
+    "content_sha256": "9d83e671c4e0489be8a29f8057d518631c32398f15120c7df9beda056eb5e7fe"
+  },
+  "demo": {
+    "url": "https://demo.gatilab.com/kumo-hybrid/",
+    "blog_id": 23,
+    "theme": "kumo-hybrid",
+    "version": "0.3.0",
+    "search_indexing": false,
+    "pages": 5,
+    "posts": 6,
+    "initial_theme": "twentytwentyfive"
+  },
+  "github": {
+    "repository": "https://github.com/wpgaurav/kumo-hybrid",
+    "tag": "v0.3.0",
+    "release": "https://github.com/wpgaurav/kumo-hybrid/releases/tag/v0.3.0",
+    "commit": "f47dec8"
+  },
+  "distribution": {
+    "download_id": 547,
+    "driver": "r2",
+    "filename": "kumo-hybrid-0.3.0-licensed.zip",
+    "bytes": 882739,
+    "sha256": "7d157b1f19d6a416012c0d8cf1d1d2f3bfbddaabeda61a9414f964bb28d40dbc"
+  },
+  "verification": {
+    "updater": {
+      "passed": true,
+      "activation": true,
+      "offsite_r2": true,
+      "offered_version": "0.3.0",
+      "installed_version": "0.3.0",
+      "download_while_maintenance": true,
+      "maintenance_removed": true
+    },
+    "product": {
+      "passed": true,
+      "checks": [
+        "Public PBB product page, one main/H1, and canonical URL",
+        "Real light/dark screenshots load from the media library",
+        "Scoped local Inter font loads",
+        "No axe A/AA violations in the product content",
+        "Kumo dark palette and matching dark screenshot",
+        "Mobile layout and native FAQ disclosure",
+        "Ordinary checkout link opens the Kumo Hybrid checkout; no order submitted"
+      ],
+      "page_errors": [],
+      "checkout_path": "/checkout/"
+    },
+    "demo": {
+      "passed": true,
+      "checks": [
+        "Live home and four patterns",
+        "Light/dark toggle",
+        "Mobile navigation and nested disclosure",
+        "Journal pagination, post, guide, contact and canvas templates",
+        "Images loaded and no localhost references",
+        "No JavaScript page errors"
+      ]
+    },
+    "theme_check": "passed required checks; custom-header/background recommendations are not theme features",
+    "synthetic_key": "disabled and rotated; zero activations",
+    "checkout_order_submitted": false
+  }
+}

@@ -1,6 +1,6 @@
 # Validation record
 
-Checked November 8, 2026. Updated for version 0.2.0 after the design-uish refinement. The 0.1.0 checks were rerun where affected.
+Checked November 8, 2026. Updated for version 0.3.0, the first FluentCart release. The earlier design checks were rerun where affected.
 
 ## Environment
 
@@ -48,8 +48,12 @@ Wide patterns initially inherited a narrow child constraint, and the mode switch
 
 Kumo's layered panels, neutral surfaces, blue controls, sentence case, and semantic roles are adapted to a publishing theme. Article text is intentionally larger than Kumo's dense application text. No React component bundle or Cloudflare identity assets are included.
 
-## Before a public release
+## First store release: 0.3.0
 
-This is not a WordPress.org submission or a completed compatibility certification. Complete Theme Check/review requirements, a manual screen-reader pass, broader keyboard testing, Safari/Firefox testing, longer translated-content checks, and compatibility testing with the specific forms, commerce, SEO, caching, and page-builder plugins the target sites need. No WooCommerce templates or Site Editor template editing are claimed in this version. Measured production performance and Core Web Vitals remain site-dependent and were not benchmarked here.
+The clean installable ZIP passes Theme Check’s required checks. The direct ZIP includes the free-license client and passed its activation/failure/update fixtures and a real bulk upgrade through FluentCart’s off-site R2 package. The live product page and demo passed the public checks recorded in `releases/0.3.0.md`. No real customer key or order was used.
+
+## Further compatibility work
+
+This is not a WordPress.org submission or a completed compatibility certification. For a WordPress.org submission, complete its full review requirements. Further work includes a manual screen-reader pass, broader keyboard testing, Safari/Firefox testing, longer translated-content checks, and compatibility testing with the specific forms, commerce, SEO, caching, and page-builder plugins the target sites need. No WooCommerce templates or Site Editor template editing are claimed in this version. Measured production performance and Core Web Vitals remain site-dependent and were not benchmarked here.
 
 The source contains no demo installer. Demo content exists only in the disposable test site. The theme does not activate plugins, modify existing content, or make external requests on activation.
