@@ -1,6 +1,6 @@
 # Validation record
 
-Checked November 8, 2026. Updated for version 0.3.0, the first FluentCart release. The earlier design checks were rerun where affected.
+Checked November 8, 2026. Updated for version 0.3.1. The native widget and comment visual regressions were tested on both supported WordPress versions.
 
 ## Environment
 
@@ -52,8 +52,14 @@ Kumo's layered panels, neutral surfaces, blue controls, sentence case, and seman
 
 The clean installable ZIP passes Theme Check’s required checks. The direct ZIP includes the free-license client and passed its activation/failure/update fixtures and a real bulk upgrade through FluentCart’s off-site R2 package. The live product page and demo passed the public checks recorded in `releases/0.3.0.md`. No real customer key or order was used.
 
+## Native widget and comment fixes: 0.3.1
+
+All seven reproduced audit findings pass the 14 visual assertions on WordPress 6.7.4 and 7.1.4. Checks include Search at 240–480px, comments at 320–1280px, dark Calendar contrast, classic Calendar link size, matching widget headings, gallery columns, and inside-button borders. Explicit author colors, fluid font sizes, borders, and heading spacing were checked separately. The legacy `text` preset keeps CSS variable and class aliases; new blocks use `foreground` to avoid WordPress’s generic `.has-text-color` flag.
+
+Native guest comment submission, validation, reply/cancel, pagination, closed/password-protected comments, logged-in forms, core Comments blocks, search variants, and audio/video state controls passed interaction checks locally. Sixteen Tabler rendering assertions pass on both WordPress versions. The widget gallery still reports three automated target-size advisories for a tag link, a checkbox, and a MediaElement mute control. These are outside the seven corrected findings and are not presented as a full accessibility certification.
+
 ## Further compatibility work
 
 This is not a WordPress.org submission or a completed compatibility certification. For a WordPress.org submission, complete its full review requirements. Further work includes a manual screen-reader pass, broader keyboard testing, Safari/Firefox testing, longer translated-content checks, and compatibility testing with the specific forms, commerce, SEO, caching, and page-builder plugins the target sites need. No WooCommerce templates or Site Editor template editing are claimed in this version. Measured production performance and Core Web Vitals remain site-dependent and were not benchmarked here.
 
-The source contains no demo installer. Demo content exists only in the disposable test site. The theme does not activate plugins, modify existing content, or make external requests on activation.
+The source contains no demo installer. Demo content exists in the separate public showcase and disposable test sites. The theme does not activate plugins, modify existing content, or make external requests on activation.

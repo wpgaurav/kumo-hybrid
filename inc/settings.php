@@ -252,7 +252,7 @@ function kumo_hybrid_theme_json( $data ) {
 							'color' => 'var(--kh-recessed)',
 						),
 						array(
-							'slug'  => 'text',
+							'slug'  => 'foreground',
 							'name'  => __( 'Text', 'kumo-hybrid' ),
 							'color' => 'var(--kh-text)',
 						),

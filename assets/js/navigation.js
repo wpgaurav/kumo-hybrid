@@ -27,7 +27,11 @@
     button.setAttribute('aria-label', link.textContent.trim());
     button.setAttribute('aria-expanded', 'false');
     button.setAttribute('aria-controls', submenu.id);
-    button.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+    const chevronMarkup = window.kumoHybridIcons?.chevron;
+    if (chevronMarkup) {
+      const chevron = new DOMParser().parseFromString(chevronMarkup, 'text/html').querySelector('svg');
+      if (chevron) button.append(document.importNode(chevron, true));
+    }
     link.after(button);
     button.addEventListener('click', () => {
       const open = button.getAttribute('aria-expanded') !== 'true';

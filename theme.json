@@ -29,7 +29,7 @@
           "color": "var(--kh-recessed)"
         },
         {
-          "slug": "text",
+          "slug": "foreground",
           "name": "Text",
           "color": "var(--kh-text)"
         },
@@ -173,7 +173,7 @@
   "styles": {
     "color": {
       "background": "var(--wp--preset--color--canvas)",
-      "text": "var(--wp--preset--color--text)"
+      "text": "var(--wp--preset--color--foreground)"
     },
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--inter)",
@@ -207,6 +207,15 @@
         "typography": {
           "fontSize": "0.875rem",
           "fontWeight": "500"
+        }
+      }
+    },
+    "blocks": {
+      "core/search": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--inter)",
+          "fontSize": "var(--wp--preset--font-size--small)",
+          "lineHeight": "1.5"
         }
       }
     }

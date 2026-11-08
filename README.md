@@ -1,6 +1,6 @@
 # Kumo Hybrid
 
-An independent WordPress theme inspired by Cloudflare's Kumo design system. Version 0.3.0 adds free lifetime update keys through FluentCart to the refined publishing and business theme.
+An independent WordPress theme inspired by Cloudflare's Kumo design system. Version 0.3.1 fixes native widget and comment layouts and uses a locally bundled Tabler icon subset. It includes free lifetime update keys through FluentCart.
 
 PHP templates preserve the familiar Customizer, menus, and widgets. `theme.json` v3 supplies the block editor with matching colors, typography, spacing, and layout. The public site uses native HTML, CSS, and two small JavaScript files. It needs no React runtime, npm build, remote font, or required plugin.
 
@@ -69,7 +69,7 @@ wp theme activate kumo-hybrid
 wp eval-file wp-content/themes/kumo-hybrid/tests/runtime.php
 ```
 
-The runtime script checks Customizer registration and persistence, sanitization, shared settings, and pattern rendering. It restores the theme mods it changes. Browser validation also checked actual core-block serialization, navigation, color modes, and a Customizer save. See `docs/validation.md` for the tested scope and remaining release gates, and `docs/design-uish-refinement.md` for the 0.3.0 design decisions.
+The runtime script checks Customizer registration and persistence, sanitization, shared settings, and pattern rendering. It restores the theme mods it changes. Browser validation also checked actual core-block serialization, navigation, color modes, and a Customizer save. Run `tests/icon-runtime.php` for the bundled icon integration and see `tests/visual/README.md` for the visual regression fixtures. See `docs/validation.md` for the tested scope and remaining release gates, and `docs/design-uish-refinement.md` for the 0.3.0 design decisions.
 
 ## License and provenance
 

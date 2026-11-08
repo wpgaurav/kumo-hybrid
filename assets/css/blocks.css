@@ -22,7 +22,7 @@
 .wp-block-details[open] > summary { margin-block-end: .75rem; }
 .wp-block-list.is-style-checklist { list-style: none; padding-inline-start: 0; }
 .wp-block-list.is-style-checklist > li { position: relative; padding-inline-start: 1.75em; margin-block: .6em; }
-.wp-block-list.is-style-checklist > li::before { content: "✓"; position: absolute; inset-inline-start: 0; color: var(--kh-link); }
+.wp-block-list.is-style-checklist > li::before { content: ""; position: absolute; inset-inline-start: 0; inset-block-start: .25em; width: 1.125em; height: 1.125em; background-color: var(--kh-link); mask: url("../icons/tabler/check.svg") center / contain no-repeat; }
 .wp-block-table { overflow-x: auto; }
 .wp-block-table table { border-collapse: collapse; width: 100%; font-size: .9375rem; }
 .wp-block-table :where(td,th) { border: 0; border-bottom: 1px solid var(--kh-hairline); padding: .9rem 1rem; text-align: start; }
@@ -100,3 +100,46 @@
   .wp-block-button__link { min-height: 48px; }
 }
 @media (max-width: 600px) { .entry-content :where(.alignleft,.alignright) { float: none; margin-inline: auto; max-width: 100%; } }
+
+/* Shared Tabler glyphs for theme-owned block affordances. */
+.wp-block-search .wp-block-search__button svg.kh-icon { fill: none; }
+.wp-block-details.is-style-panel > summary { display: flex; gap: .625rem; align-items: flex-start; list-style: none; }
+.wp-block-details.is-style-panel > summary::-webkit-details-marker { display: none; }
+.wp-block-details.is-style-panel > summary::before { content: ""; width: 1rem; height: 1rem; margin-block-start: .25em; flex-shrink: 0; background-color: currentColor; mask: url("../icons/tabler/chevron-down.svg") center / contain no-repeat; }
+.wp-block-details.is-style-panel[open] > summary::before { transform: rotate(180deg); }
+
+/* Native widget glyphs use the same Tabler subset as theme controls. */
+.widget_rss .rss-widget-feed { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; vertical-align: text-bottom; }
+.widget_rss .rss-widget-feed img { opacity: 0; width: 20px; height: 20px; }
+.widget_rss .rss-widget-feed::before { content: ""; position: absolute; inset: 0; background-color: currentColor; mask: url("../icons/tabler/rss.svg") center / contain no-repeat; }
+.mejs-container .mejs-controls .mejs-button:is(.mejs-play,.mejs-pause,.mejs-mute,.mejs-unmute,.mejs-fullscreen,.mejs-unfullscreen) > button { background-image: none; }
+.mejs-container .mejs-controls .mejs-button:is(.mejs-play,.mejs-pause,.mejs-mute,.mejs-unmute,.mejs-fullscreen,.mejs-unfullscreen) > button::before { content: ""; display: block; width: 20px; height: 20px; background-color: var(--kh-media-ink); mask: var(--kh-player-icon) center / contain no-repeat; }
+.mejs-container .mejs-play > button { --kh-player-icon: url("../icons/tabler/player-play.svg"); }
+.mejs-container .mejs-pause > button { --kh-player-icon: url("../icons/tabler/player-pause.svg"); }
+.mejs-container .mejs-mute > button { --kh-player-icon: url("../icons/tabler/volume.svg"); }
+.mejs-container .mejs-unmute > button { --kh-player-icon: url("../icons/tabler/volume-off.svg"); }
+.mejs-container .mejs-fullscreen > button { --kh-player-icon: url("../icons/tabler/arrows-maximize.svg"); }
+.mejs-container .mejs-unfullscreen > button { --kh-player-icon: url("../icons/tabler/arrows-minimize.svg"); }
+.mejs-container .mejs-overlay-button { background-image: none; }
+.mejs-container .mejs-overlay-button::before { content: ""; display: block; width: 56px; height: 56px; margin: 12px; background-color: var(--kh-media-ink); mask: url("../icons/tabler/player-play.svg") center / contain no-repeat; }
+
+/* Native Search variants use intrinsic action sizing and a shrinkable input. */
+.wp-block-search .wp-block-search__inside-wrapper { display: flex; flex-wrap: wrap; align-items: stretch; gap: .5rem; width: 100%; }
+.wp-block-search .wp-block-search__input { flex: 1 1 8rem; min-width: 0; min-height: 44px; font-family: inherit; font-size: max(1rem,1em); line-height: 1.5; padding: .5rem .75rem; border-color: var(--kh-line); }
+.wp-block-search .wp-block-search__button { flex: 0 0 auto; max-width: 100%; min-height: 44px; margin-inline: 0; padding: .5rem .75rem; overflow-wrap: normal; word-break: normal; white-space: nowrap; font-family: inherit; font-size: inherit; line-height: 1.5; border-radius: var(--kh-control-radius); }
+.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper { padding: .25rem; border: 1px solid var(--kh-line); border-radius: var(--kh-control-radius); }
+.wp-block-search.wp-block-search__button-inside .wp-block-search__input { border: 0; border-radius: 0; background: transparent; }
+.wp-block-search .wp-block-search__button.has-icon { display: inline-flex; align-items: center; justify-content: center; }
+@media (pointer: coarse) { .wp-block-search .wp-block-search__button, .wp-block-search .wp-block-search__input { min-height: 48px; } }
+
+/* Core Calendar colors must inherit semantic roles unless the author chose colors. */
+.wp-block-calendar { overflow-x: auto; }
+.wp-block-calendar table:not(.has-text-color) { color: var(--kh-text); }
+.wp-block-calendar table:not(.has-text-color) :where(th,td) { border-color: var(--kh-hairline); }
+.wp-block-calendar table:not(.has-background) th { background: var(--kh-recessed); }
+.wp-block-calendar table td a { display: flex; align-items: center; justify-content: center; min-width: 1.5rem; min-height: 2rem; }
+
+/* Legacy preset aliases: avoid a palette class colliding with WP's custom-color flag. */
+:where(.has-text-color) { color: var(--kh-text); }
+.has-text-background-color { background-color: var(--kh-text) !important; }
+.has-text-border-color { border-color: var(--kh-text) !important; }

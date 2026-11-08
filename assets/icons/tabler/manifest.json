@@ -1,0 +1,26 @@
+{
+  "library": "Tabler Icons",
+  "version": "3.47.0",
+  "style": "outline",
+  "source": "~/icons/svg/outline",
+  "license": "MIT",
+  "files": {
+    "arrow-right.svg": "fbd84a5780a8b2c6d4efc5f3376675e999d11eb43fadf7b9cbf2848b3120a7da",
+    "arrows-maximize.svg": "783d491ed6046e51b9b09d377b8a5dc1c01aec3ecd28546b67065a326ca7f672",
+    "arrows-minimize.svg": "04bbdfc9361cbdb7d2049690a9fc35818628b6b5e03794ce625ead786a39b34a",
+    "check.svg": "012d69548a769f4287e0af4c535b2cdf6e40457651de8078c4e588f0488952d6",
+    "chevron-down.svg": "a3a801faaeeb084e8a96897a5e2f355870b861e9606a1b50a89011b2718cc322",
+    "corner-down-right.svg": "2b59826e561e2eca84cc8c6ad0a89f91fb29f567308c22a8592660379c337b47",
+    "menu-2.svg": "a7630e8fc37c090e8d665c8739ea838566db4bcf79c7710a554ace3bf4733e04",
+    "message-circle.svg": "5ceee2b67520bdeadbb44e53a6180859d6016ae21ec1ce4ae93a643f6ba2bf5c",
+    "moon.svg": "57372c0f83966692ec9c8dfea4c28503df2d5a260825d24a230fab86bcbb3bdb",
+    "player-pause.svg": "a797446af04bd77bfbf008bab59eaa51c3a45c879247b58299f8a97efc5c137c",
+    "player-play.svg": "9726d5358929fbfe4a4cbd08131a5f1b4246ca01125f5108e7221b9c73e101ff",
+    "rss.svg": "30c70367dcac394e35c12ca059868a68e9bc2462d2cd3cb34de1af7746049b8f",
+    "search.svg": "57e054b6c1508be40d5eba1ea434b702f5ff55dca04e28e5e3f22472c2f6176d",
+    "sun.svg": "1753d34d4c09f4a0e32afbb417defeded055a88f8ac33963556570a53a76dfa9",
+    "volume-off.svg": "78b1a0008c7f89433ee7eba691df53f44d681729fa6d933eb9e7ca8f2dc9a344",
+    "volume.svg": "22d085446863a81202f4ee88b5ad86462ad63ff3fe48c678f2f67dcb048a491c",
+    "x.svg": "445e1b53563ad7e089f94dee923c2ef3444c63d45294a733687471a76a3c3b8d"
+  }
+}

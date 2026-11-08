@@ -30,3 +30,8 @@ THE SOFTWARE.
 ## Inter variable font
 
 Inter by Rasmus Andersson and the Inter Project contributors is bundled locally in normal and italic WOFF2 format. The unmodified files were obtained from the official [Inter repository](https://github.com/rsms/inter/tree/master/docs/font-files). They are distributed under the SIL Open Font License 1.1. The complete notice and license are retained in `assets/fonts/Inter-LICENSE.txt`. Official font information: https://rsms.me/inter/.
+
+
+## Tabler Icons 3.47.0
+
+The theme uses a small outline SVG subset copied from the user-provided local Tabler collection (`~/icons/svg/outline`). The canonical local collection identifies itself as 3.47.0. The unmodified source SVGs and complete MIT license are bundled in `assets/icons/tabler/`. The source is https://github.com/tabler/tabler-icons/tree/v3.47.0. No icon font or remote icon service is loaded.

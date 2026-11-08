@@ -7,10 +7,11 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'KUMO_HYBRID_VERSION', '0.3.0' );
+define( 'KUMO_HYBRID_VERSION', '0.3.1' );
 
 require_once get_theme_file_path( '/inc/settings.php' );
 require_once get_theme_file_path( '/inc/template-tags.php' );
+require_once get_theme_file_path( '/inc/icons.php' );
 
 /**
  * Register native theme features and shared editor styles.
@@ -65,6 +66,7 @@ function kumo_hybrid_assets() {
 			'strategy'  => 'defer',
 		)
 	);
+	wp_add_inline_script( 'kumo-hybrid-navigation', 'window.kumoHybridIcons = ' . wp_json_encode( array( 'chevron' => kumo_hybrid_icon( 'chevron' ) ) ) . ';', 'before' );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

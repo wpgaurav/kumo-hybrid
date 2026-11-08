@@ -41,7 +41,7 @@ h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); line-height: 1.1; margin-block: 0 1
 .js .kh-menu li > ul { display: none; }
 .js .kh-menu li.kh-submenu-open > ul { display: block; }
 .kh-submenu-toggle { display: inline-flex; align-items: center; justify-content: center; border: 0; background: transparent; color: var(--kh-subtle); padding: .55rem .3rem; min-width: 28px; min-height: 40px; }
-.kh-submenu-toggle svg { width: 14px; }
+.kh-submenu-toggle svg { width: 16px; height: 16px; }
 .kh-submenu-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
 .kh-header-actions { display: flex; align-items: center; gap: .65rem; }
 .kh-control, .kh-button, input[type="submit"] { min-height: 36px; display: inline-flex; align-items: center; justify-content: center; gap: .5rem; border-radius: var(--kh-control-radius); padding: .4rem .75rem; font: 500 .875rem/1.5 var(--kh-sans); text-decoration: none; }
@@ -96,7 +96,7 @@ h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); line-height: 1.1; margin-block: 0 1
 .kh-404 { max-width: var(--kh-content); margin: 2rem auto; padding: clamp(1.5rem, 4vw, 3rem); }
 .kh-404 h1 { font-size: clamp(2rem, 4vw, 3rem); }
 .kh-search-form { display: flex; gap: .5rem; max-width: 520px; margin-block: 1.5rem; }
-input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]), textarea, select { max-width: 100%; border: 1px solid var(--kh-line); border-radius: 7px; padding: .65rem .8rem; background: var(--kh-base); color: var(--kh-text); font-size: 1rem; }
+:where(input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]), textarea, select) { max-width: 100%; border: 1px solid var(--kh-line); border-radius: 7px; padding: .65rem .8rem; background: var(--kh-base); color: var(--kh-text); font-size: 1rem; }
 .kh-search-form input { min-width: 0; flex: 1; }
 input::placeholder, textarea::placeholder { color: var(--kh-subtle); opacity: 1; }
 .kh-sidebar .kh-widget { margin-bottom: 1.5rem; padding: 1.25rem; border: 1px solid var(--kh-hairline); border-radius: var(--kh-radius); background: var(--kh-base); }
@@ -111,16 +111,28 @@ input::placeholder, textarea::placeholder { color: var(--kh-subtle); opacity: 1;
 .kh-footer-menu a { color: inherit; text-decoration: none; font-weight: 400; }
 .kh-footer-menu a:hover { color: var(--kh-text); text-decoration: underline; text-underline-offset: .2em; }
 .comment-list { list-style: none; padding: 0; }
-.comment-list .children { list-style: none; padding-inline-start: 1.5rem; }
-.comment-body { margin-block: 1rem; padding: 1.5rem; background: var(--kh-base); border: 1px solid var(--kh-hairline); border-radius: 9px; }
+.comment-list .children { list-style: none; margin-inline: 0; padding-inline-start: clamp(.75rem, 2vw, 1.5rem); }
+.comment-body { min-width: 0; margin-block: 1rem; padding: clamp(1rem, 2vw, 1.5rem); background: var(--kh-base); border: 1px solid var(--kh-hairline); border-radius: 9px; }
+.comment-content, .comment-author, .comment-metadata { overflow-wrap: anywhere; word-break: normal; }
+.comment-content :where(img, video, iframe, pre, table) { max-width: 100%; }
+.comment-content :where(pre) { overflow-x: auto; }
 .comment-author .avatar { border-radius: 50%; margin-inline-end: .5rem; }
 .comment-metadata, .reply, .comment-notes, .logged-in-as { font-size: .8125rem; color: var(--kh-subtle); }
 .comment-form label { display: block; font-size: .875rem; }
 .comment-form textarea { width: 100%; }
 .comment-form-cookies-consent { display: flex; gap: .6rem; align-items: start; }
 .bypostauthor > .comment-body { border-inline-start: 3px solid var(--kh-brand); }
-.gallery { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); }
-.gallery-item { margin: 0; }
+.gallery { display: grid; gap: 1rem; grid-template-columns: repeat(var(--kh-gallery-columns,3), minmax(0,1fr)); }
+.gallery-columns-1 { --kh-gallery-columns: 1; }
+.gallery-columns-2 { --kh-gallery-columns: 2; }
+.gallery-columns-3 { --kh-gallery-columns: 3; }
+.gallery-columns-4 { --kh-gallery-columns: 4; }
+.gallery-columns-5 { --kh-gallery-columns: 5; }
+.gallery-columns-6 { --kh-gallery-columns: 6; }
+.gallery-columns-7 { --kh-gallery-columns: 7; }
+.gallery-columns-8 { --kh-gallery-columns: 8; }
+.gallery-columns-9 { --kh-gallery-columns: 9; }
+.gallery-item { float: none; min-width: 0; width: auto; margin: 0; }
 .wp-caption { max-width: 100%; }
 .wp-caption-text, .gallery-caption { font-size: .875rem; color: var(--kh-subtle); }
 @media (min-width: 1000px) {
@@ -163,3 +175,18 @@ input::placeholder, textarea::placeholder { color: var(--kh-subtle); opacity: 1;
 }
 
 .aligncenter { display: block; margin-inline: auto; }
+
+/* Widget defaults share one hierarchy while explicit block choices remain stronger. */
+.kh-widget :where(.wp-block-heading) { font-size: 1rem; margin-block: 0 1rem; }
+.kh-widget :where(p) { margin-block: 0 1rem; }
+.kh-widget :where(p:last-child) { margin-block-end: 0; }
+.kh-widget :where(button, input, select, textarea) { overflow-wrap: normal; word-break: normal; }
+.widget_calendar { overflow-x: auto; }
+.widget_calendar .wp-calendar-table { width: 100%; table-layout: fixed; border-collapse: collapse; color: var(--kh-text); }
+.widget_calendar :where(caption) { padding-block: 0 .75rem; font-size: .875rem; color: var(--kh-subtle); }
+.widget_calendar :where(th, td) { padding: 0; text-align: center; }
+.widget_calendar :where(th) { padding-block: .35rem; font-size: .875rem; font-weight: 500; background: var(--kh-recessed); }
+.widget_calendar :where(td) { height: 2rem; font-size: .875rem; }
+.widget_calendar td a { display: flex; align-items: center; justify-content: center; width: 100%; min-width: 1.5rem; min-height: 2rem; border-radius: 4px; }
+.widget_calendar td a:hover { background: var(--kh-recessed); }
+.widget_calendar :where(.wp-calendar-nav) { display: flex; justify-content: space-between; gap: 1rem; margin-block-start: .75rem; font-size: .875rem; }

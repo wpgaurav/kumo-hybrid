@@ -17,24 +17,6 @@ function kumo_hybrid_has_sidebar() {
 }
 
 /**
- * Return an SVG from a fixed, theme-owned set.
- *
- * @param string $name Icon name.
- * @return string
- */
-function kumo_hybrid_icon( $name ) {
-	$paths = array(
-		'menu'    => '<path d="M4 6h16M4 12h16M4 18h16"/>',
-		'mode'    => '<path d="M21 12.8A9 9 0 0 1 11.2 3 9 9 0 1 0 21 12.8Z"/>',
-		'arrow'   => '<path d="M5 12h14m-6-6 6 6-6 6"/>',
-		'chevron' => '<path d="m6 9 6 6 6-6"/>',
-		'search'  => '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',
-	);
-	// All SVG paths are theme-owned, never user-supplied.
-	return isset( $paths[ $name ] ) ? '<svg class="kh-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' . $paths[ $name ] . '</svg>' : '';
-}
-
-/**
  * Render optional publication date and author metadata.
  */
 function kumo_hybrid_post_meta() {
