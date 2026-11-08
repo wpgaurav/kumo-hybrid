@@ -1,0 +1,158 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "id": "F4-search-240",
+      "passed": true,
+      "actual": {
+        "lines": 1,
+        "height": 44,
+        "overflow": false
+      },
+      "expected": "one label line; no form overflow"
+    },
+    {
+      "id": "F4-search-280",
+      "passed": true,
+      "actual": {
+        "lines": 1,
+        "height": 44,
+        "overflow": false
+      },
+      "expected": "one label line; no form overflow"
+    },
+    {
+      "id": "F4-search-320",
+      "passed": true,
+      "actual": {
+        "lines": 1,
+        "height": 44,
+        "overflow": false
+      },
+      "expected": "one label line; no form overflow"
+    },
+    {
+      "id": "F4-search-360",
+      "passed": true,
+      "actual": {
+        "lines": 1,
+        "height": 44,
+        "overflow": false
+      },
+      "expected": "one label line; no form overflow"
+    },
+    {
+      "id": "F4-search-480",
+      "passed": true,
+      "actual": {
+        "lines": 1,
+        "height": 44,
+        "overflow": false
+      },
+      "expected": "one label line; no form overflow"
+    },
+    {
+      "id": "F1-comments-320",
+      "passed": true,
+      "actual": 320,
+      "expected": "<=320"
+    },
+    {
+      "id": "F1-comments-390",
+      "passed": true,
+      "actual": 390,
+      "expected": "<=390"
+    },
+    {
+      "id": "F1-comments-768",
+      "passed": true,
+      "actual": 768,
+      "expected": "<=768"
+    },
+    {
+      "id": "F1-comments-1280",
+      "passed": true,
+      "actual": 1280,
+      "expected": "<=1280"
+    },
+    {
+      "id": "F2-calendar-dark",
+      "passed": true,
+      "actual": 15.8,
+      "expected": ">=4.5"
+    },
+    {
+      "id": "F6-widget-headings",
+      "passed": true,
+      "actual": {
+        "block": {
+          "font": "16px",
+          "top": "0px"
+        },
+        "classic": {
+          "font": "16px",
+          "top": "0px"
+        }
+      },
+      "expected": "matching default size and top margin"
+    },
+    {
+      "id": "F7-gallery-columns",
+      "passed": true,
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "id": "F5-search-inside",
+      "passed": true,
+      "actual": {
+        "wrapper": 1,
+        "input": 0
+      },
+      "expected": "wrapper border; no input border"
+    },
+    {
+      "id": "F3-calendar-targets",
+      "passed": true,
+      "actual": {
+        "width": 238,
+        "available": 238,
+        "targets": [
+          {
+            "w": 34,
+            "h": 32
+          },
+          {
+            "w": 34,
+            "h": 32
+          },
+          {
+            "w": 34,
+            "h": 32
+          },
+          {
+            "w": 34,
+            "h": 32
+          },
+          {
+            "w": 34,
+            "h": 32
+          },
+          {
+            "w": 34,
+            "h": 32
+          },
+          {
+            "w": 34,
+            "h": 32
+          },
+          {
+            "w": 34,
+            "h": 32
+          }
+        ]
+      },
+      "expected": "all day links >=24x24"
+    }
+  ]
+}

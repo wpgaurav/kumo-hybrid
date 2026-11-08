@@ -1,0 +1,17 @@
+{
+  "url": "https://demo.gatilab.com/kumo-hybrid/",
+  "blog_id": 23,
+  "version": "0.3.1",
+  "file_parity": 61,
+  "search_indexing": false,
+  "new_examples": {
+    "components": 38,
+    "classic-comments": 39,
+    "block-comments": 40,
+    "widgets": 41
+  },
+  "native_widget_types": 18,
+  "helper": "kumo-hybrid-demo/kumo-hybrid-demo.php",
+  "helper_sha256": "7c00f312fe0030e51206922a914e210362c7c22d6035b33536e76753bcfad515",
+  "public_comments": "read-only samples"
+}

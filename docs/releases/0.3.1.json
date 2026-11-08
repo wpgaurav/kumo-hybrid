@@ -1,0 +1,171 @@
+{
+  "version": "0.3.1",
+  "date": "2026-11-08",
+  "product": {
+    "id": 1189259,
+    "variation_id": 165,
+    "url": "https://gauravtiwari.org/product/kumo-hybrid/",
+    "template": "pbb-template.php",
+    "pbb_sections": 7,
+    "content_sha256": "c1252a38c642b13d79a977362539a507b9f7f6954191d034e5b2a6bbc5ea8ffd",
+    "media": {
+      "demo-light": {
+        "id": 1189340,
+        "url": "https://r2.gauravtiwari.org/wp-content/uploads/2026/11/kumo-hybrid-031-demo-light.png"
+      },
+      "demo-dark": {
+        "id": 1189341,
+        "url": "https://r2.gauravtiwari.org/wp-content/uploads/2026/11/kumo-hybrid-031-demo-dark.png"
+      }
+    },
+    "license": "free lifetime; unlimited websites; updates only"
+  },
+  "github": {
+    "release": "https://github.com/wpgaurav/kumo-hybrid/releases/tag/v0.3.1",
+    "tag": "v0.3.1",
+    "commit": "c67d6fb"
+  },
+  "distribution": {
+    "product_id": 1189259,
+    "download_id": 548,
+    "version": "0.3.1",
+    "driver": "r2",
+    "size": 893891,
+    "sha256": "64292d2249813ceeea77fbe77c23303f11d5208bac2dafe10a1b72c7d74bb12b"
+  },
+  "packages": {
+    "clean": {
+      "filename": "kumo-hybrid-0.3.1.zip",
+      "version": "0.3.1",
+      "size": 888956,
+      "sha256": "24ea26a0071798954400bf2fa773c2699a15216d0cfd4626f607e8f0514399f6",
+      "files": 60,
+      "product_id": 1189259,
+      "variation_id": 165
+    },
+    "direct": {
+      "filename": "kumo-hybrid-0.3.1-licensed.zip",
+      "version": "0.3.1",
+      "size": 893891,
+      "sha256": "64292d2249813ceeea77fbe77c23303f11d5208bac2dafe10a1b72c7d74bb12b",
+      "files": 61,
+      "product_id": 1189259,
+      "variation_id": 165
+    }
+  },
+  "demo": {
+    "url": "https://demo.gatilab.com/kumo-hybrid/",
+    "blog_id": 23,
+    "version": "0.3.1",
+    "file_parity": 61,
+    "search_indexing": false,
+    "new_examples": {
+      "components": 38,
+      "classic-comments": 39,
+      "block-comments": 40,
+      "widgets": 41
+    },
+    "native_widget_types": 18,
+    "helper": "kumo-hybrid-demo/kumo-hybrid-demo.php",
+    "helper_sha256": "7c00f312fe0030e51206922a914e210362c7c22d6035b33536e76753bcfad515",
+    "public_comments": "read-only samples"
+  },
+  "verification": {
+    "updater": {
+      "passed": true,
+      "activation": true,
+      "offsite_r2": true,
+      "offered_version": "0.3.1",
+      "installed_version": "0.3.1",
+      "download_while_maintenance": true,
+      "maintenance_removed": true,
+      "installed_file_parity": 61
+    },
+    "product": {
+      "passed": true,
+      "checks": [
+        "Public PBB product page, one main/H1, and canonical URL",
+        "Real light/dark screenshots load from the media library",
+        "Scoped local Inter font loads",
+        "No axe A/AA violations in the product content",
+        "Kumo dark palette and matching dark screenshot",
+        "Mobile layout and native FAQ disclosure",
+        "Ordinary checkout link opens the Kumo Hybrid checkout; no order submitted"
+      ],
+      "page_errors": [],
+      "checkout_path": "/checkout/"
+    },
+    "demo": {
+      "passed": true,
+      "version": "0.3.1",
+      "checks": [
+        "Live 0.3.1 assets, Tabler controls, light/dark screenshots",
+        "18 native widget classes; narrow Search, Calendar targets, two-column gallery",
+        "Native Search expansion and disclosure",
+        "All four new examples fit 320, 390 and 768px",
+        "Classic threaded comments, pagination and Reply/Cancel",
+        "Core Comments blocks and Reply/Cancel",
+        "Existing templates and mobile tour navigation"
+      ],
+      "search": {
+        "lines": 1,
+        "height": 44
+      },
+      "calendar": {
+        "color": "rgb(245, 245, 245)",
+        "targets": [
+          {
+            "w": 34,
+            "h": 32
+          }
+        ]
+      },
+      "page_errors": []
+    },
+    "media": {
+      "passed": true,
+      "checks": [
+        "WP_Widget_Media_Audio: play/pause, mute/unmute, bundled Tabler states",
+        "WP_Widget_Media_Video: play/pause, mute/unmute, bundled Tabler states"
+      ]
+    },
+    "public_comment_guard": {
+      "passed": true,
+      "error_code": "kumo_demo_read_only",
+      "count_unchanged": true
+    },
+    "visual_regressions": {
+      "wordpress_6_7_4": 14,
+      "wordpress_7_1_4": 14,
+      "all_passed": true
+    },
+    "runtime_assertions_per_version": 33,
+    "icon_assertions_per_version": 16,
+    "license_fixtures": 7,
+    "theme_check": "required checks pass",
+    "synthetic_license": "disabled and rotated; zero activations; local key removed",
+    "checkout_order_submitted": false,
+    "existing_demo_content_preserved": 10,
+    "customizer_and_assigned_widgets_preserved": true,
+    "cleanup": {
+      "ga": {
+        "staging_files_removed": 3
+      },
+      "demo": {
+        "staging_files_removed": 4
+      },
+      "local": {
+        "fixture_plugins_removed": 2,
+        "owned_servers_stopped": 2,
+        "private_key_removed": true
+      }
+    },
+    "checkout_total": "INR 0.00, observed in live checkout"
+  },
+  "rollback": {
+    "previous_version": "0.3.0",
+    "previous_download_id": 547,
+    "previous_artifact": "kumo-hybrid-0.3.0-licensed.zip",
+    "previous_artifact_preserved": true
+  }
+}
